@@ -2,10 +2,10 @@
 
 ## **Install**
 
-	```sh
-	$ git clone https://github.com/Reedwarbler/SVsim.git
-	$ make
-	 ```
+```sh
+$ git clone https://github.com/Reedwarbler/SVsim.git
+$ make
+```
 
 ## **Usage**
 
