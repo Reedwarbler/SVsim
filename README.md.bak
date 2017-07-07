@@ -6,41 +6,25 @@
 	$ make
 	 ```
 
+## **Usage**
 
-1. Usage: ./SVsim [options] 
+```sh
+$ ./SVsim [options] 
 
-                  -D/I      For deletions/insertions
-                  -h        help
+$                  -D/I      For deletions/insertions
+$                  -h        help
 
-Options for Deletion;
-                  -v FILE   Deletion postion and genotype file
-                  -i INT    Total number of individuals
-                  -c FILE   Chromosome file
-                  -s INT    Number of simulated individuals
+$ Options for Deletion;
+$                  -v FILE   Deletion postion and genotype file
+$                  -i INT    Total number of individuals
+$                  -c FILE   Chromosome file
+$                  -s INT    Number of simulated individuals
 
-Options for Insertion;
-                  -v FILE   Insertion position and length file
-                  -i INT    Number of individuals to simulate
-                  -c FILE   Chromosome file
-                  -z INT    % of 0/0
-                  -o INT    % of 0/1
-                  -t INT    % of 1/1, 0/0 add 0/1 and 1/1 should be 100.
-
-
-2. Simulate haplotypes with deletions
-Example:
-./SVHapSimulator -D -v 15.hg19.genotype.txt -c /reference/chr15.fa -s 2 -i 45
-
-Format of "-v File":
-chrom delete_id leftmost_position rightmost_position genotype_info
-Example Format of "-v File"
-15 P1_M_061510_15_385 18847456 18847615 0/1:99:-1000.00,0.00,-1000.00:PASS 0/0:3:-0.16,-0.51,-1000.00:LowQual 0/0:17:-0.01,-1.73,-1000.00:PASS
-
-3. Simulate haplotypes with insertions
-Example:
-./SVHapSimulator -I -v /Insertion/chr11.insertion.bed -c /Reference/hg19/chr11.fa -i 2 -z 33 -o 33 -t 34
-
-Format of "-v File":
-chrom position insertion_length
-Example of "-v File":
-11 418014 292
+$ Options for Insertion;
+$                  -v FILE   Insertion position and length file
+$                  -i INT    Number of individuals to simulate
+$                  -c FILE   Chromosome file
+$                  -z INT    % of 0/0
+$                  -o INT    % of 0/1
+$                  -t INT    % of 1/1, 0/0 add 0/1 and 1/1 should be 100.
+```
